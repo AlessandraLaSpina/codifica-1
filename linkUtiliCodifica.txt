@@ -1,0 +1,8 @@
+http://teicat.huma-num.fr/zoner.php
+http://teibyexample.org/examples/TBED01v00.htm
+https://github.com/angelodel80/corsoCodifica/tree/master/src/BelliniInRete-master/encodings/lists
+https://github.com/angelodel80/corsoCodifica/blob/master/src/schema/xsd/tei_all.xsd
+http://www.tei-c.org/release/doc/tei-xsl/
+
+
+
