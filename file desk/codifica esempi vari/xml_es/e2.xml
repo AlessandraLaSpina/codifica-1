@@ -1,0 +1,35 @@
+
+<body>
+	<pb xml:id="leaf01r" type="recto"/>
+	<lg type="poem">
+		<head rend="underline" type="main-authorial">After <subst>
+			<del type="overstrike" seq="1">an</del>
+			<add place="supralinear" type="insertion" seq="2">the <del type="overstrike">unsolv'd</del> </add>
+		</subst> argument</head>
+		<l>
+			<seg>
+				<del type="overstrike">The</del>
+				<add place="supralinear" type="insertion">
+					<del type="overstrike">Coming in,</del>
+					<subst>
+						<del type="overwrite" seq="1">a</del>
+						<add place="over" type="overwrite" seq="2">A </add>
+					</subst>
+				group of </add>
+				little children, and their</seg>
+			<seg>ways and chatter, flow
+			<add place="inline" type="unmarked">in, </add>
+			<del type="overstrike">
+				<add place="supralinear" type="unmarked">upon me</add>
+			</del>
+			</seg>
+		</l>
+		<l>
+			<seg>Like <add place="supralinear" type="insertion">welcome </add> rippling water o'er my </seg>
+			<seg>heated <add place="supralinear" type="insertion">nerves and </add> flesh.</seg>
+		</l>
+		<closer>
+			<signed>Walt Whitman</signed>
+		</closer>
+	</lg>
+</body>

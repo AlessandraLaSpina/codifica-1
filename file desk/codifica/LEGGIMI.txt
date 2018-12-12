@@ -1,0 +1,15 @@
+per comodita e perche non me lo faceva fare alcune cose invece di copiarle, inserisco qui le indicazioni per accedervi.
+
+LO SCHELETRO DI UN DOCUMENTO TEI
+
+	lezione 5	pag. 56		fatta da 2 prof sostituti (approfondimento TEI)
+	lezione 6 	fatta dal prof del corso (TEI) --> in questa lezione non ho preso gli appunti su tutto perche ritenuri inutili o nel caso da ricercare direttamente dalla lezione, quindi se manca qualche cosa, vedere direttamente la lezione
+
+
+LEZIONI IMPORTANTI 
+lezione 6 fatta dai due tizi esterni
+lezione 7 importante per la codifica di un doc XML
+lezione 8 importante per la codifica di stylesheet in XSML le XSD
+
+
+ 

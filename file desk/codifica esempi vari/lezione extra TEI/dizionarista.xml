@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.rg/ns/1.0">
+
+	<teiHeader>
+		<fileDesc xml:lang="it">
+			<titleStmt>
+				<title>il mio primo dizionario</title>
+				<author>Jurgen Memaj</author>
+			</titleStmt>
+			<publicationStmt>
+				<p>info sulla pubblicazione </p>
+			</publicationStmt>
+			<sourceDesc>
+				<p>info sulla sorgente</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+
+	<text>
+		<body>
+			<entry n="1">
+				<form type="lemma"> 	<!--info lemma-->
+					<orth>dizionarista</orth> 	<!--il lemma-->
+					<pron notation="ipa">dittsjonaˈrista</pron> 	<!--pronuncia ipa-->
+					<syll>di|zio|na|rì|sta</syll> 	<!--sillabazione, IPA-->	
+				</form>
+				<gramGrp> 	<!--info morfo-sintattiche-->
+					<pos>s.</pos> 	<!--POS-->
+					<gen>m/f.</gen> 	<!--genere-->
+				</gramGrp>
+				<etym> 
+					da<gloss>"dizionario" </gloss> ed <gloss>"-ista"</gloss>
+				</etym>
+				<sense n="s1">
+					<usg type="dom">(professione)(letteratura)</usg> 	
+					<def>chi redige un dizionario</def> 	<!--definizione -->
+				
+					<xr type="syn"> 	<!--sinonimi-->
+						<ref>lessicografo</ref>
+					</xr>
+					<xr type="syn">
+						<ref>vocabolarista</ref>
+					</xr>
+				</sense>
+			</entry>
+		</body>
+	</text>
+
+<TEI>

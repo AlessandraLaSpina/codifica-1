@@ -1,0 +1,11 @@
+<!ELEMENT TEI (header, facsimile?, text+)>
+<!ELEMENT header (#PCDATA)>
+<!ELEMENT facsimile (#PCDATA)>
+<!ELEMENT text (#PCDATA|child-element)> <!-- non sono molto sicuro di child-element, forse devo mettere <seg> | non va messo ulla e basra -->
+
+<!ATTLIST header type #FIXED #CDATA "intestazione">
+<!ATTLIST header lang #IMPLIED #NMTOKEN>
+<!ATTLIST facsimile source #REQUIRED>
+<!ATTLIST facsimile ref #IMPLIED #IDREFS>
+<!ATTLIST testo id #REQUIRED #ID>
+<!ATTLIST testo type #IMPLIED #CDATA>

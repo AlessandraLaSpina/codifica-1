@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+ fileproject: es1.xml
+ name: Jurgen 
+-->
+<test>
+
+	<ciao>
+		<cc>
+		</cc>
+	</ciao>
+
+	<choice>
+		<sic>testo con errore</sic>
+		<cor> testo corretto</cor>
+	</choice>
+
+	<htmlCode> <![CDATA[ <h1>Capitolo Primo</h1> <h2>Sezione Seconda</h2> ]]> </htmlCode>
+
+</test>
+

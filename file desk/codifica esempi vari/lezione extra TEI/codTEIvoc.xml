@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.rg/ns/1.0">
+
+	<teiHeader>
+		<fileDesc xml:lang="it">
+			<titleStmt>
+				<title>il mio primo dizionario</title>
+				<author>Jurgen Memaj</author>
+			</titleStmt>
+			<publicationStmt>
+				<p>info sulla pubblicazione </p>
+			</publicationStmt>
+			<sourceDesc>
+				<p>info sulla sorgente</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+
+	<text>
+		<body>
+			<entry n="1">
+				<form type="lemma"> 	<!--raggruppa tutte le info sulle form scritte e orali di un lemma-->
+					<orth>lessicografo</orth> 	<!--la forma ortografica del lemma.-->
+					<pron notation="ipa">lessi'kografo</pron> 	<!--la pronuncia. ipa e' specificato come notazione-->
+					<syll>les|si|co'|gra|fo</syll> 	<!--sillabazione della parola-->	
+				</form>
+				<gramGrp> 	<!--raggruppa info morfo sintattiche di una unita' lessicale-->
+					<pos>s.</pos> 	<!--part of speech-->
+					<gen>m.</gen> 	<!--genere-->
+				</gramGrp>
+				<etym> dal <lang>greco tardo</lang> 	<!--nome lingua menzionata-->
+					<mentioned>parte menzionata in greco </mentioned>, composto di <mentioned>parte in greco </mentioned>ossia <gloss>"lessico" </gloss>e <mentioned>parte greco </mentioned>ovvero <gloss>"-grafo"</gloss> 	<!--un sintagma o parola che fornisce una glossa o definizione per qualche altra parola o sintagma-->
+				</etym> 	<!--parte in greco che non so scrivere-->
+				<sense n="s1">
+					<usg type="dom">(linguistica)</usg> 	<!--ifo sull'uso con tipe ci dice che stiamo codificando il dominio-->
+					<def>chi si occupa di lessicografia</def> 	<!--la definizione -->
+					<cit type="example">
+						<quote>Francesco Sabatini e' un linguista, lessicografo e presidente onorario dell'Accademia della Crusca</quote>
+					</cit>
+				</sense>
+				<sense n="s2">
+					<def>colui che contribuisce alla compilazione di un dizionario</def>
+					<cit type="example">
+						<quote>Tullio de Mauro e' stato un lessicografo</quote>
+					</cit>
+					<xr type="syn"> 	<!--xr e ref codificano i sinonimi. xr rimanda a un altra porzione di questo o altro testo. syn ci dice che e' un sinonimo ref definisc eil riferimento ad un altra posizione-->
+						<ref>dizionarista</ref>
+					</xr>
+					<xr type="syn">
+						<ref>vocabolarista</ref>
+					</xr>
+				</sense>
+<!--parte aggiuntiva fatta da me seguendo le linee del prof e tei p5 guidelines, dovebbe essere giusta, maritengo si potesse fare anche con xr -->
+				<re type="derived"> 	<!-- su type posso mettere quello che voglio al posto di derivated?-->
+					<form>
+						<orth>lessicografia</orth>
+					</form>
+				</re>
+				<re type="correlated"> 	<!--penso di non poter mettere "type=correlated" pero' vabbe-->
+					<form>
+						<orth>lessicale</orth>
+						<orth>lessico</orth>
+						<orth>lessicografico</orth>
+						<orth>lessicologia</orth>
+						<orth>lessicologico</orth>
+						<orth>lessicologo</orth>
+					</form>
+				</re>
+			</entry>
+		</body>
+	</text>
+
+<TEI>

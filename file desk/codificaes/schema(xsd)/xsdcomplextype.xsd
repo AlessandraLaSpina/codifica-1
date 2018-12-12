@@ -1,0 +1,189 @@
+<!-- ATT probabilmente mi tocchera' cambiare i tipi di virgolette perche quando le aggiungo io sono di tipo diverso -->
+<xsd:schema xmlns:xsd=‘‘http://www.w3.org/2001/XMLSchema’’>
+    <xsd:element name=‘‘text’’> 
+        <xsd:complexType>
+            <xsd:sequence> 
+                <xsd:element name=‘‘body’’/>
+            </xsd:sequence> 
+        </xsd:complexType> 
+    </xsd:element>
+</xsd:schema>
+
+<!-- global element declaration -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name=‘‘body’’> 
+        <xsd:complexType>
+            <xsd:attribute name=‘‘lang’’/> 
+            <xsd:attribute name=‘‘type’’/> 
+        </xsd:complexType> 
+    </xsd:element>
+    
+    <xsd:element name=‘‘text’’> 
+        <xsd:complexType>
+            <xsd:all> 
+                <xsd:element ref=‘‘body’’/> 
+            </xsd:all>
+        </xsd:complexType> 
+    </xsd:element> 
+</xsd:schema>
+
+<!--global group declaration-->
+
+<xsd:group name=‘‘fileDesc’’> 
+    <xsd:sequence>
+        <xsd:element name=‘‘titleStmt’’/> 
+        <xsd:element name=‘‘publicationStmt’’/> 
+        <xsd:element name=‘‘sourceDesc’’/> 
+    </xsd:sequence>
+</xsd:group>
+
+<!--L’unico attributo obbligatorio nella dichiarazione di elementi è l’attributo name.-->
+
+<!--Element declaration: Attributi - Esempio-->
+
+<xsd:element name=‘‘body’’> 
+    <xsd:complexType>
+        <xsd:sequence maxOccurs=‘‘unbounded’’>
+            <xsd:element ref=‘‘div’’/> 
+        </xsd:sequence>
+    </xsd:complexType> 
+</xsd:element>
+
+<!--Qualsiasi dichiarazione di attributo per essere effettivamente utile deve essere riportata all’interno di una dichiarazione di elemento-->
+<!-- esempio global attribute -->
+<xsd:schema xmlns:xsd=‘‘http://www.w3.org/2001/XMLSchema’’>
+    <xsd:attribute name=‘‘analysis’’ /> 
+    <!-- -->
+    <xsd:element name=‘‘word’’> 
+        <xsd:complexType>
+            <xsd:attribute ref=‘‘analysis’’/>
+        </xsd:complexType> 
+    </xsd:element> 
+</xsd:schema>
+
+<xsd:attributeGroup name=‘‘EmpAttributes’’>
+    <xsd:attribute name=‘‘name’’> 
+        <xsd:simpleType>
+            <xsd:restriction base=‘‘xsd:string’’>
+                <xsd:maxLength value=‘‘20’’/> 
+            </xsd:restriction>
+        </xsd:simpleType> 
+    </xsd:attribute> 
+    <xsd:attribute name=‘‘department’’> 
+        <xsd:simpleType>
+            <xsd:restriction base=‘‘xsd:string’’> 
+                <xsd:length value=‘‘2’’/> 
+            </xsd:restriction> 
+        </xsd:simpleType>
+    </xsd:attribute> 
+</xsd:attributeGroup>
+
+
+<!--Data Type: Facets Esempio-->
+
+
+<xsd:element name=‘‘name’’> 
+    <xsd:complexType>
+        <xsd:attribute name=‘‘type’’> 
+            <xsd:simpleType>
+                <xsd:restriction base=‘‘xsd:string’’>
+                    <xsd:pattern value=‘‘[A-Za-z]+’’/> 
+                </xsd:restriction>
+            </xsd:simpleType> 
+        </xsd:attribute>
+    </xsd:complexType> 
+</xsd:element>
+
+<!--
+Global simple types
+    Molto utili quando bisogna uniformare un insieme di validazioni e manutenerle in modo coerente
+-->
+
+<xsd:simpleType name=‘‘chapterNumberType’’>
+    <xsd:restriction base=‘‘xsd:integer’’>
+        <xsd:maxInclusive value=‘‘1000’’/>
+        <xsd:minInclusive value=‘‘1’’/> 
+    </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:element name=‘‘item’’> 
+    <xsd:complexType>
+        <xsd:attribute name=‘‘originalChapter’’ type=‘‘chapterNumberType’’/> 
+    </xsd:complexType>
+</xsd:element>
+
+
+<!-- complex typ derivation -->
+
+<xsd:complexType name=‘‘RestrictedPhoneType’’>
+    <xsd:simpleContent> 
+        <xsd:restriction base=‘‘PhoneType’’> 
+            <xsd:pattern value="[0-9]3-[0-9]3-[0-9]4"/> 
+            <xsd:attribute name=‘‘Type’’> 
+                <xsd:simpleType> 
+                    <xsd:restriction base=‘‘xsd:string’’> 
+                        <xsd:enumeration value="Home"/> 
+                        <xsd:enumeration value="Work"/>
+                    </xsd:restriction> 
+                </xsd:simpleType>
+            </xsd:attribute> 
+            <xsd:attribute name="CallOnWeekend" type="xsd:boolean" use="prohibited"/> 
+        </xsd:restriction>
+    </xsd:simpleContent> 
+</xsd:complexType>
+
+<!--Intro Text Encoding Initiative-->
+
+<teiHeader> 
+    <fileDesc> 
+
+        <titleStmt> 
+            <title>La Divina Commedia: versione elettronica</title>
+            <respStmt> 
+                <resp>Conversione TEI P5 a cura di</resp>
+                <name>M. Rossi</name> 
+            </respStmt>
+        </titleStmt> 
+        
+        <publicationStmt>
+            <publisher>Università di Pisa</publisher>
+            <date>2002-11-07</date> 
+            <availability status=‘‘restricted’’>
+                <p></p>
+            </availability>
+        </publicationStmt> 
+
+        <sourceDesc> 
+            <bibl>
+                <title>La Divina Commedia</title>
+                <author>Dante Alighieri</author>
+                <publisher>Mondadori</publisher>
+                <date>1988</date>
+            </bibl>
+        </sourceDesc> 
+
+    </fileDesc>
+</teiHeader>
+
+
+<!-- Esempio schematico di documento TEI -->
+
+<TEI> 
+<teiHeader> [informazioni del TEI Header]</teiHeader> 
+    <text> 
+
+        <front> 
+            [premessa, dedica ...]
+        </front> 
+        
+        <body> 
+            [corpo del testo ...]
+        </body>
+
+        <back> 
+            [postfazione, appendice ...]
+        </back> 
+   
+    </text>
+</TEI>
+

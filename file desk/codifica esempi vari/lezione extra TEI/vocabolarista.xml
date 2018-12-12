@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.rg/ns/1.0">
+
+	<teiHeader>
+		<fileDesc xml:lang="it">
+			<titleStmt>
+				<title>il mio primo dizionario</title>
+				<author>Jurgen Memaj</author>
+			</titleStmt>
+			<publicationStmt>
+				<p>info sulla pubblicazione </p>
+			</publicationStmt>
+			<sourceDesc>
+				<p>info sulla sorgente</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+
+	<text>
+		<body>
+			<entry n="1">
+				<form type="lemma"> 	<!--info lemma-->
+					<orth>vocabolarista</orth> 	<!--il lemma-->
+					<pron notation="ipa">vokabolaˈrista</pron> 	<!--pronuncia ipa-->
+					<syll>vo|ca|bo|la|rì|sta</syll> 	<!--sillabazione, IPA-->	
+				</form>
+				<gramGrp> 	<!--info morfo-sintattiche-->
+					<pos>s.</pos> 	<!--POS-->
+					<gen>m/f.</gen> 	<!--genere-->
+				</gramGrp>
+				<etym> 
+					deriva da<gloss>"vocabolario"</gloss>
+				</etym>
+				<sense n="s1">
+					<usg type="dom">(professione)(letteratura)</usg> <!--su wiki non c'e' ma secondo me ci va-->	
+					<def>chi compone un vocabolario</def> 	<!--definizione -->
+					<xr type="syn"> 	<!--sinonimi-->
+						<ref>lessicografo</ref>
+					</xr>
+				</sense>
+			</entry>
+		</body>
+	</text>
+
+<TEI>

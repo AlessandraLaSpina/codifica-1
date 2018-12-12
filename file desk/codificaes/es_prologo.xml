@@ -1,0 +1,9 @@
+    <?xml version="version number" encoding="encoding type" standalone="yes|no" ?>
+    <!-- This document contains data on Codifica di Testi.
+        Filename: es_prologo.xml
+        Author: Jurgen
+        Date: 03/12/18 -->
+
+    <!-- CDATA esempio -->
+
+    <htmlCode> <![CDATA[ <h1>Capitolo Primo</h1> <h2>Sezione Seconda</h2> ]]> </htmlCode>
