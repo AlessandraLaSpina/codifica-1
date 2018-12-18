@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+	xmlns:svg="http://www.w3.org/2000/svg" 
+	xmlns:xi="http://www.w3.org/2001/XInclude">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Giuseppe (e basta) a Turtura Oliva, in Lago Maggiore, 25 luglio 1913</title>
+				 
+				<!-- ricordarsi di creare il file ListPerson con iriferimemti -->
+				<author ref="TEI-ListPerson.xml#VB">Giuseppe</author>
+				<respStmt>
+					<resp>transcription by</resp>
+					<name xml:id="LAJ">NOI</name>
+				</respStmt>
+			
+				<respStmt>
+                    <resp>Ente di Appartenenza</resp>
+                    <name type="comune" xml:id="SP">Comune della Spezia</name>
+				</respStmt>
+
+			</titleStmt>
+
+			<editionStmt>
+
+				<edition>Studenti di Storia Pubblica Digitale, Corso di Laurea Magistrale di Informatica Umanistica, Università di Pisa
+                    <!-- COMPILAZIONE -->
+                    <date when="2018">2018</date>
+				</edition>
+<!--
+				<edition>Digital Edition
+					<date when="2018-12">December 2018</date>
+				</edition>
+-->
+				<respStmt>
+					<resp>encoding by</resp>
+					<name xml:id="LAJ">NOI</name>
+				</respStmt>
+
+  				<respStmt>                   
+                    <resp>Compilatore</resp>
+                    <name xml:id="Tommaso Castagneto">Tommaso Castagneto</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabile scientifico</resp>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Funzionario responsabile</resp>
+                    <name xml:id="MR">Marzia Ratti</name>
+				</respStmt>
+
+			</editionStmt>
+			
+			<publicationStmt>
+				
+                <publisher>Unipi</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability>
+                    <p>Available under licence only</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>LabCD</distributor>
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                    <addrLine>Pisa</addrLine>
+				</address>
+
+<!--
+				<publisher />
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+				</availability>
+-->
+			</publicationStmt>
+
+			<sourceDesc> 
+				<msDesc>
+					<msIdentifier>
+<!--volendo si puo mettere <bloc> EU pero mi pare esagerato, poi ci sarebbe da mettere anche la regione a quei punti....-->
+						<country xml:id = "IT">Italy</country>
+						<settlement xml:id = "SP" type="city">Spezia (SP)</settlement>
+						<place xml:id = "MGP" type="museum">Museo Civico Etnografico "Giovanni Podenzana"</place>
+						<idno type="inventory">7694_064_001/002</idno>	<!-- cod. singola lettera -->					
+						<altIdentifier>
+						<p>Sezione dei cimeli garibaldini e della Prima Guerra Mondiale</p>
+						</altIdentifier>
+<!-- idno type="collocation"></idno> ->>> indica la collocazione della lettera al museo (io non lo userei) ||| il prof non codifica il posto con place ma con repository, secondo me cosi si ha un livello di specificita' maggiore -->
+					</msIdentifier>
+
+					<msContents>
+						<msItem>
+							<author xml:lang="ita" ref="TEI-ListPerson.xml#VB">Giuseppe</author>
+							<title type="uniform" xml:lang="ita">
+								<persName ref="TEI-ListPerson.xml#VB" role="sender">Giuseppe</persName> a								<persName ref="TEI-ListPerson.xml#CP" role="recipient">Turtura Olivia</persName>, in
+								<placeName ref="TEI-ListPlace.xml#Put">Lago Maggiore</placeName>,
+								<date when="1913-07-25">25 luglio 1913</date>
+							</title>
+							<summary>Cartolina Artistica </summary> <!--mah io non ce lo metterei proprio questo, pero'...-->
+							<textLang mainLang="ita">Italian</textLang>
+						</msItem>
+					</msContents>
+					<physDesc>
+						<objectDesc>
+							<supportDesc>
+								<support>
+									<objectType> Cartolina</objectType>
+									<material>Carta</material>
+								
+									<extent>
+										<measure type="composition" unit="foglio" quantity="1">1</measure>				
+<!--  va inserita la quantità dell'oggetto, indicando in type il tipo descritto -->
+										<dimensions unit="cm">
+											<height>14</height>
+											<width>9</width>
+										</dimensions>
+									</extent>
+
+									<stamp>francobollo - Regno d'Italia</stamp>
+
+									<stamp> 
+										Sono presenti un timbro di partenza che passa per meta' sul francobollo, alla destra, un timbro di transito nella parte centrale superiore, questo e' leggermente talgiato nella parte superiore e un timbro di arrivo posiionato tra i primi due e sopra ad una parte delle indicazioni del 
+										destinatario.
+<!-- E' la descrizione in linguaggio naturale dei francobolli e dei timbri  -->
+									</stamp>
+									
+									<p>Cartolina in buone condizioni fisiche, composta da un solo foglio, colore begie sul davanti, inchiostro nero. La parte del verso presenta i timbri, il francobollo, le indicazoni del luogo del mittente e tutte le indicazioni del destinatario. La parte recto presenta il vero corpo della lettera, sulla parte piu' esterna, girata di 90 gradi, dal basso verso l'alto, riporta la stampa "Copyright by A.Noyer 1912-Allegorie n 198". Il retro invece presenta una uomo che si abbevera dalla mano di una persona (presumibilmente una donna). 
+<!-- descrizione fisica della lettera -->
+									</p>
+								</support>
+								<foliation>									
+<!-- es.foglio verso a sx, foglio recto a dx con suddivisioni ulteriori o altro. --> 									Il foglio non presenta alcuna piegatura o 											danneggiamento significativo
+								<condition>
+<!-- descrizione delle condizioni fisiche di conservazione della lettera -->
+							<!--	<condition>Buono</condition> -->
+<!--  quello e' quello che mette il prof nel modello, ma io metterei questo  -->
+									<p>Lettera in buone condizioni fisiche, il foglio presenta solo delle macchie, probabilemnte dell'inchiostro distaccatosi ed espanso dall'umidita', pero' senza conseguenze rilevanti. 
+									</p>
+								</condition>
+							</supportDesc>
+						</objectDesc>
+						<handDesc>
+							<p>Scrittura a mano libera molto poco leggibile. Ma proprio per un cazzo. Il folio fronte, presenta un'annotazioni di seconda mano tra parentesi. 
+							</p>
+
+<!-- *********************************************************************** -->								<handNote xml:id="ann1">
+<!-- indica la mano dell'aggiunta Lago Maggiore tra parentesi, la scrittura non sembra la stessa. Io farei finta di nulla comunque -->
+								<p> Un annotazione, probabilmente un aggiunta, sembra essere Lago Maggiore tra parentesi, soggetto ignoto
+									<persName ref="TEI-ListPerson.xml#CP" role="librettist">Mr. boh</persName>
+								</p>
+							</handNote>
+<!-- *********************************************************************** -->	
+						</handDesc>
+					</physDesc>
+
+					<additional>
+						<adminInfo>
+							<note>	
+<!-- descrizione del significato della segnatura della lettera -->
+									All'interno della directory del prof, il codice specifico che termina con 064, indica il mumero identificativo della cartolina, in un ordine crescente. (ovviamente questo modo di spiegare la cosa non va bene e sara' vostro gradito compito aggiustarlo ;) o cancellare il tag che tanto e' inutile in questo caso )
+<!-- Note aggiuntive non strutturabili con altri tag TEI -->
+							</note>
+						</adminInfo>
+					</additional>
+
+				</msDesc>
+<!--**** esempio elenco persone citate nella cartolina ****-->
+				<ListPerson>
+					<person xml:id="GC">
+                        <persName>
+                            <forename>Giovanni</forename>
+                            <surname>Coliola </surname>
+                        </persName>
+                        <sex>M</sex>
+                        <occupation n="1">[maggiore]</occupation>
+                        <note></note>
+					</person>
+				</ListPerson>
+<!--**** esempio posti citati nella cartolina ****-->
+ 				<listPlace>
+                    <place xml:id="RV">
+                        <placeName>Ravenna</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Ravenna</district>
+                        <district type="provincia">RV</district>
+                        <country key="N">IT</country>
+                        <note>...</note>
+                    </place>
+				</listPlace>
+<!--**** esempio elecno organizzazioni ****-->
+ 				<listOrg>
+                    <org xml:id="N3">
+                        <orgName type="N"></orgName>
+                        <desc>...</desc>
+                    </org>
+				</listOrg>
+
+			</sourceDesc>
+		</fileDesc>
+		
+		<profileDesc>
+			<correspDesc>
+				<correspAction type="sent">
+					<persName ref="TEI-ListPerson.xml#VB" role="writer">Giuseppe</persName>
+					<placeName ref="TEI-ListPlace.xml#Put">Lago Maggiore</placeName>
+					<date when="1913-07-25">25 luglio 1913</date>
+<!--**** questo tipo di data mi piace di piu' io userei questo****-->
+					<date type="postage" when="1913-07-25">1913/07/25</date>
+					<date type="postage" when="1913-07-25">25 luglio 1913</date>
+					<date type="postage" when="1913-07-23">23 luglio 1913</date>	
+					<date type="writing" when="1913-07-25">25 luglio 1913</date>
+<!--potrebbe essere uno span temporale -->
+				</correspAction>
+				<correspAction type="received"> 
+				<persName ref="TEI-ListPerson.xml#CP">Turtura Olivia</persName>
+					<placeName ref="TEI-ListPlace.xml#Paris">Roma</placeName>
+					<date when="aaaa-mm-gg">data arrivo</date>
+<!-- potrebbe essere uno span temporale -->
+				</correspAction>
+			</correspDesc>
+
+
+
+
+<!-- dubbioso qui penso vada cartolina ma lo schema con il link mmmmmm rivedere -->
+			<textClass>
+				<keywords scheme="http://thes.bncf.firenze.sbn.it">					
+	<!-- soggettario della Biblioteca Nazionale di Firenze -->
+					<term> cartolina 							
+	<!-- un termine tra:  lettera, biglietto, minuta -->
+					</term>
+					<term> Cartolina Artistica</term>
+				</keywords>
+			</textClass>
+<!-- ********non ricordo il xke di questa divisione***************************** -->
+
+			<langUsage id="ita">
+				<language ident="it-IT">italiano</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+<!--******************************fine header************************************-->
+<!--************** da qui in poi i due esempi cambiano molto, decidere quale seguire **************-->	
+
+
+
+	<facsimile>
+
+<!--nello schema lui fa diversamente riga 222, quello mi sembra piu adatto vedere-->
+
+		<surface n="1" xml:id="7694-064Rl" ulx="3" uly="14" lrx="873" lry="1054">			<!-- FRONTE VERSO (SX)-->
+
+			<graphic url="7694-064R.jpg" width="1645px" height="1054px" />
+			
+			<zone ulx="61" uly="356" lrx="96" lry="842" rendition="Line" xml:id="064Rl_line_01"/>
+			<zone ulx="118" uly="22" lrx="708" lry="137" rendition="Line" xml:id="064Rl_line_02"/>
+			<zone ulx="120" uly="182" lrx="810" lry="299" rendition="Line" xml:id="064Rl_line_03"/>
+			<zone ulx="87" uly="302" lrx="817" lry="359" rendition="Line" xml:id="064Rl_line_04"/>
+			<zone ulx="97" uly="362" lrx="812" lry="434" rendition="Line" xml:id="064Rl_line_05"/>
+			<zone ulx="98" uly="437" lrx="807" lry="512" rendition="Line" xml:id="064Rl_line_06"/>
+			<zone ulx="101" uly="514" lrx="807" lry="600" rendition="Line" xml:id="064Rl_line_07"/>
+			<zone ulx="101" uly="607" lrx="777" lry="680" rendition="Line" xml:id="064Rl_line_08"/>
+			<zone ulx="102" uly="687" lrx="502" lry="765" rendition="Line" xml:id="064Rl_line_09"/>
+			<zone ulx="148" uly="769" lrx="821" lry="840" rendition="Line" xml:id="064Rl_line_10"/>
+			<zone ulx="56" uly="850" lrx="726" lry="916" rendition="Line" xml:id="064Rl_line_11"/>
+			<zone ulx="265" uly="920" lrx="637" lry="1035" rendition="Line" xml:id="064Rl_line_12"/>
+
+		</surface>
+
+		<surface n="2" xml:id="7694-064Rr" ulx="832" uly="17" lrx="1643" lry="1052">		<!-- FRONTE RECTO (DX) -->
+			<graphic url="7694-064R.jpg" width='1645px' height='1054px'/>
+			<!-- zona con l'indirizzo del destinario -->
+			<zone ulx="877" uly="390" lrx="1273" lry="534" rendition="Line" xml:id="064Rr_line_01"/>
+			<zone ulx="878" uly="546" lrx="1617" lry="659" rendition="Line" xml:id="064Rr_line_02"/>
+			<zone ulx="877" uly="667" lrx="1613" lry="727" rendition="Line" xml:id="064Rr_line_03"/>
+			<zone ulx="925" uly="731" lrx="1518" lry="784" rendition="Line" xml:id="064Rr_line_04"/>
+			<zone ulx="1266" uly="821" lrx="1622" lry="935" rendition="Line" xml:id="064Rr_line_05"/>
+			
+			<!-- seconda mano-->
+    		<zone ulx="841" uly="844" lrx="1192" lry="1024" rendition="HotSpot" xml:id="064Rr_hotspot_01"/>
+<!--**** ATT questa non l'ho segnata come mano esterna sopra ma penso ci vada ed a quel punto va come seconda mano 1 poiche si tratta del n.64 in cima tra i timbri ||| inoltre alcune zone si sovrappongono per forza di cose, bisogna vedere come poi viene interpretata sta cosa e se va bene cosi' o bisogna ridurre le zone selezionate****-->
+			<zone ulx="1065" uly="33" lrx="1155" lry="104" rendition="HotSpot" xml:id="064Rr_hotspot_02"/>
+			
+			<!-- timbro in alto a sinistra -->
+			<zone ulx="707" uly="13" lrx="1043" lry="315" rendition="HotSpot" xml:id="064Rr_hotspot_03"/>
+			<!--timbro in alto a destra-->
+			<zone ulx="1153" uly="18" lrx="1491" lry="368" rendition="HotSpot" xml:id="064Rr_hotspot_04"/>
+			<!-- timbro al centro  -->
+			<zone ulx="932" uly="168" lrx="1275" lry="494" rendition="HotSpot" xml:id="064Rr_hotspot_05"/>
+			<!-- francobollo -->
+			<zone ulx="1323" uly="73" lrx="1591" lry="370" rendition="HotSpot" xml:id="064Rr_hotspot_05"/>
+
+		</surface>
+
+		<surface n="3" xml:id="7694-064F">	<!--non ho messo le parti dell'img visto che e tutta-->		<!-- RETRO -->
+			<graphic url="7694-064F.jpg" width='1044px' height='1637px' />
+			<!--DMastroiani-->
+			<zone ulx="801" uly="1328" lrx="1017" lry="1427" rendition="HotSpot" xml:id="064F_hotspot_01"/>
+			<!--198 AN PARIS-->
+			<zone ulx="942" uly="1502" lrx="1017" lry="1589" rendition="HotSpot" xml:id="064F_hotspot_02"/>
+			<!--FIEVRE D'AMOUR-->
+			<zone ulx="356" uly="1535" lrx="677" lry="1579" rendition="HotSpot" xml:id="064F_hotspot_03"/>
+
+			<!-- e qui direi di mettere i puntatori come sopra per le varie parti dell'immagine-->
+			<!--uomo che si abbevera-->
+			<zone ulx="618" uly="685" lrx="888" lry="1324" rendition="HotSpot" xml:id="064F_hotspot_04"/>
+			<!--donna che lo fa dissetare alla sua fonte -->
+			<zone ulx="281" uly="329" lrx="608" lry="1142" rendition="HotSpot" xml:id="064F_hotspot_05"/>
+			<!--fonte-->
+			<zone ulx="125" uly="158" lrx="282" lry="699" rendition="HotSpot" xml:id="064F_hotspot_06"/>
+
+		</surface>
+
+	</facsimile>
+
+	<text type="letter" xml:id="7694-064R" n="064R">
+		<!-- FRONTE RECTO --> <!--tutti i timbri sono messi a fini esplicativi, va deciso come codificarli -->
+		<front type="envelop"> 	
+			<pb n="2" xml:id="7694-064Rr_front" facs="#7694-064Rr"/> 
+			<div xml:id="064Rr_hs_03" facs="#064Rr_hotspot_03" type="sent">
+				<ab>					<!-- inserire l'id del timbro -->
+					<stamp type="postage">						<!-- timbro del mittente con data -->
+						<mentioned>
+							<placeName ref="TEI-ListPlace.xml#NSS">quello che c'e stritto sul timbro</placeName>
+							<date when="1913-07-25"> 25  luglio 1834 </date>
+						</mentioned>
+					</stamp>
+				</ab>
+			</div>
+			<div xml:id="064Rr_hs_04" facs="#064Rr_hotspot_04" type="sent">
+				<ab>					<!-- inserire l'id del timbro -->
+					<stamp type="postage">						<!-- timbro del mittente con data -->
+						<mentioned>
+							<placeName ref="TEI-ListPlace.xml#NSS">quello che c'e stritto sul timbro</placeName>
+							<date when="1913-07-25"> 25  luglio 1913 </date>
+						</mentioned>
+					</stamp>
+				</ab>
+			</div>
+			<div xml:id="064Rr_hs_05" facs="#064Rr_hotspot_05" type="destination">
+				<ab>					<!-- timbro  a destra-->
+					<stamp type="postage">						<!-- timbro del destinatario con data -->
+						<placeName>
+							<unclear reason="illegible"></unclear>
+						</placeName>
+						<date when="1913-07-25"> 25
+							<unclear reason="illegible"> luglio </unclear> 1913
+						</date>
+					</stamp>
+				</ab>
+				<ab>
+					<address type="receiver">						<!--  informazioni del destinatario -->
+						<lb xml:id="064Rr_lb_01" n="1" facs="#064Rr_line_01"/>
+						<addrLine> Signorina </addrLine>
+						<lb xml:id="064Rr_lb_02" n="2" facs="#064Rr_line_02"/>
+						<addrLine> <persName ref="TEI-ListPerson.xml#CP"> Olivia Turtura </persName> </addrLine>
+						<lb xml:id="064Rr_lb_03" n="3" facs="#064Rr_line_03"/>
+						<addrLine>presso Sig. <persName ref="TEI-ListPerson.xml#CP"> Giberdini (lui insomma) </persName> </addrLine>
+						<lb xml:id="064Rr_lb_04" n="4" facs="#064Rr_line_04"/>
+						<addrLine> Via Cavour 12 </addrLine>
+						<lb xml:id="064Rr_lb_05" n="5" facs="#064Rr_line_05" />
+						<addrLine> <placeName ref="TEI-ListPlace.xml#Paris">Arona</placeName> </addrLine>
+					</address>
+				</ab>
+			</div>
+		</front>
+
+		<body xml:lang="ita">
+
+			<div type="fronte-verso">
+				<pb n="1" xml:id="7694-064Rlc" facs="#7694-064Rl"/> <!--att controllare bene la cod qui xke l'id non va bene-->
+
+				<div type="opener" n="o_01">
+					<ab type="parag" n="ab_01">
+						<s type="sentence" n="s_01">
+							<lb xml:id="064Rl_lb_01" n="1" facs="#064Rl_line_01"/>
+							<dateline> <!--volendo penso si possa mettere dentro un <h1>-->
+								<placeName ref="TEI-ListPlace.xml#Put">Ravenna</placeName> 
+								<date when="25-VII-913">25 luglio 1913</date>
+							</dateline>
+						</s>
+					</ab>
+				</div>
+				<div type="letter-body" n="t_01">.
+					<ab type="parag" n="ab_02">
+						<s type="sentence" n="s_02">
+							<lb xml:id="064Rl_lb_02" n="2" facs="#064Rl_line_02"/> Oggi finalmente abbiamo 
+							<!-- ATT mettere il fatto che va a capo-->
+							<lb xml:id="064Rl_lb_03" n="3" facs="#064Rl_line_03"/> avuto una bella giornata <!--a capo--> 
+							<lb xml:id="064Rl_lb_04" n="4" facs="#064Rl_line_04"/> piena di sole: da 
+							<lb xml:id="064Rl_lb_05" n="5" facs="#064Rl_line_05"/> tanto tempo era attesa _
+							<!-- ATT qui c'e' un rietro che pero non so ancora come codificare qui-->
+							<lb xml:id="064Rl_lb_06" n="6" facs="#064Rl_line_06"/> La salute e' ottima _
+							<lb xml:id="064Rl_lb_07" n="7" facs="#064Rl_line_07"/> Attendiamo notizie 
+							<lb xml:id="064Rl_lb_08" n="8" facs="#064Rl_line_08"/> da Arona _ 
+
+						</s>
+					</ab>
+				</div>
+				<div type="closer" n="c_01">
+					<ab type="parag" n="ab_03">
+						<s type="sentence" n="s_03">
+							<lb xml:id="064Rl_lb_09" n="9" facs="#064Rl_line_09"/> Saluti riversi a te e 
+							<lb xml:id="064Rl_lb_10" n="10" facs="#064Rl_line_10"/> alla <persName ref="TEI-ListPerson.xml#VB">Signora Carolini _ </persName>
+
+							<salute>
+								<lb xml:id="064Rl_lb_11" n="11" facs="#064Rl_line_11"/>
+								<hi rend="align(cener)"> 
+									<persName ref="TEI-ListPerson.xml#VB" role="sender">
+										<hi rend="underline">Giuseppe</hi>
+									</persName>
+								</hi>
+							</salute>
+						</s>
+					</ab>
+				</div>
+			</div>
+
+			<div type="fronte-verso">
+				<pb n="2" xml:id="7694-064Rrh" facs="#7694-064Rr"/> 
+
+				<ab type="paratext" subtype="addition" hand="#h2" xml:id="064Rr_hs_01" facs="#064Rr_hotspot_01">
+						<!-- prima mano sconosciuta, vedere come codificare le parentesi --> 
+					<placeName ref="TEI-ListPlace.xml#Put">(Lago Maggiore)</placeName>
+				</ab>
+
+				<ab type="paratext" subtype="addition" hand="#h1" xml:id="064Rr_hs_02" facs="#064Rr_hotspot_02">
+					<num value="64">64</num>
+				</ab>
+
+			</div>
+		</body>
+
+<!-- io direi le note di non metterlecodifica img tei
+-->
+		<back>
+			<!-- inserire le note -->
+			<div type="notes">
+				<div type="ann_notes"> <!-- indicare con resp se le note sono dell'edizione critica o di altra responsabilità-->
+					<note xml:id="LL1_16_note1" resp="#EC">
+						<p>
+							<!--  codificare i nomi, le opere, i luoghi e i termini in tutta la nota solo se sono pertinenti col testo di Bellini e non bisogna fare un lessico della Seminara -->
+							<persName ref="TEI-ListPerson.xml#VB" role="composer">Bellini</persName> si riferiva al conte <persName ref="TEI-ListPerson.xml#CP" role="librettist">Carlo Pepoli</persName>, che aveva predisposto il <term subtype="music-term" ref="TEI-ListTerm.xml#libretto">libretto</term> dei <rs type="work" ref="TEI-ListWork.xml#Puritani">Puritani</rs>. 
+						</p>
+					</note>
+					<note xml:id="LL1_16_note2" resp="#EC">
+						<p>
+							<persName ref="TEI-ListPerson.xml#VB" role="composer">Bellini</persName> si riferisce al terzo numero musicale del primo	<term subtype="music-term" ref="TEI-ListTerm.xml#atto">atto</term> dei							<rs type="work" ref="TEI-ListWork.xml#Puritani">Puritani</rs>, il							<term subtype="music-term" ref="TEI-ListTerm.xml#duetto">duetto</term> fra Elvira e Giorgio "Sai come arde in petto mio".
+						</p>
+					</note>
+					<note xml:id="LL1_16_note3" resp="#EC">
+						<p>
+							<persName ref="TEI-ListPerson.xml#VB" role="composer">Bellini</persName> si riferisce alla							<term subtype="music-term" ref="TEI-ListTerm.xml#cavatina">cavatina</term> di Arturo "Ad Arturo - A te, o cara, amor talora", che segue il							<term subtype="music-term" ref="TEI-ListTerm.xml#coro">Coro </term>nel quarto numero musicale del primo							<term subtype="music-term" ref="TEI-ListTerm.xml#atto">atto</term> dei							<rs type="work" ref="TEI-ListWork.xml#Puritani">Puritani</rs>.
+						</p>
+					</note>
+				</div>
+
+				<div type="bibliography">
+					<listBibl xml:id="LL1_16_bibliography">
+						<head>Bibliography of the letter LL1.16 </head>
+						<bibl xml:id="LL1_16_Pastura" corresp="TEI-ListBibl.xml#Pastura1959">
+							<author>Pastura</author>
+							<biblScope unit="page" from="422" to="422">422</biblScope>
+							<date when="1959">1959</date>
+						</bibl>
+						<bibl xml:id="LL1_16_Neri" corresp="TEI-ListBibl.xml#Neri2005">
+							<author>Neri</author>
+							<biblScope unit="page" from="301" to="302">301-302</biblScope>
+							<date when="2005">2005</date>
+						</bibl>
+					</listBibl>
+
+				</div>
+			</div>
+		</back>
+
+	</text>
+
+</TEI>
